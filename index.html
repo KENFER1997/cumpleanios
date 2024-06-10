@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(45deg, #9ad2ff, #9ad2ff);
+        }
+        .container {
+            text-align: center;
+            background: rgba(180, 241, 245, 0.904);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 90%;
+        }
+        .container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .container h1 {
+            font-size: 3em;
+            color: hwb(192 30% 4%);
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .container p {
+            font-size: 1.5em;
+            color: #39f0f0;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #800000; /* Color guinda */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #a00000;
+        }
+        @media (max-width: 600px) {
+            .container h1 {
+                font-size: 2em;
+            }
+            .container p {
+                font-size: 1.2em;
+            }
+            .button {
+                font-size: 1em;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="david.png" alt="Imagen de cumpleaños" onerror="this.onerror=null; this.src='placeholder.png';">
+        <h1>Feliz Cumpleaños</h1>
+        <p>David Fernandez Rimarachin</p>
+        <a href="carta.html" class="button">Para Haydee</a>
+    </div>
+</body>
+</html>
